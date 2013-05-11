@@ -10,7 +10,7 @@ Just add some links with href that redirects to:
 http://yourdomain/language/change/<language>
 ```
 
-<language\> supports two letters language code like "en", "fr", "pl" etc.
+\<language\> supports two letters language code like "en", "fr", "pl" etc.
 
 Then add an i18n language set method somewere in your code. Your application top controller's before() method should be a good place to put this code into.
 
@@ -57,7 +57,7 @@ class Model_Article_Lang extends ORM
 
 Now you can access translated records using:
 
-```
+``` php
 $article = ORML::factory('article');
 $article->created // access to non translated fields
 $article->updated
@@ -65,4 +65,4 @@ $article->translation->title // access to translated
 $article->translation->content
 ```
 
-Remember to import schema and fixtures from tests/test_data/structure/test-schema-mysql.sql
+Remember to import schema and fixtures from tests/test_data/structure/test-schema-mysql.sql. Feel free to contribute.
